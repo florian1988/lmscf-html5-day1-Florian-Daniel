@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kontakt Formular</title>
+</head>
+<body>
+<div id="contact-form" class="clearfix">
+    <h1>Get In Touch with Code Factory!!!</h1>
+    <h2>You find out Coding is your passion and you wanna learn from the very bests?</h2>
+    <ul id="errors" class="">
+        <li id="info">Listen Wizzard, we do have limited number of places!!</li>
+    </ul>
+    <p id="success">So hurry Up and fill in your details below !</p>
+    <form method="post" action="process.php">
+        <label for="name">Name: <span class="required">*</span></label>
+        <input type="text" id="name" name="name" value="" placeholder="Dick Johnson" required="required" autofocus="autofocus" />
+         
+        <label for="email">Email Address: <span class="required">*</span></label>
+        <input type="email" id="email" name="email" value="" placeholder="johnson@dick.com" required="required" />
+         
+        <label for="telephone">Telephone: </label>
+        <input type="tel" id="telephone" name="telephone" value="" />
+         
+        <label for="level">Level: </label>
+        <select id="level" name="level">
+            <option value="beginner">Beginner</option>
+            <option value="advanced">Advanced</option>
+            <option value="profi">Profi</option>
+        </select>
+         
+        <label for="message">Message: <span class="required">*</span></label>
+        <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>
+         
+        <span id="loading"></span>
+        <input type="submit" value="Send!" id="submit-button" />
+        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+    </form>
+</div>
+</body>
+</html>
